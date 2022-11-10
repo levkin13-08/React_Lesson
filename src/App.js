@@ -1,14 +1,15 @@
+import React  from 'react';
 import './App.css';
+import MessageList  from "./components/MessageList";
+import SendMessage  from "./components/SendMessage";
 
-function App(props) {
+function App() {
+  
   return (
     <div className="App">
-      <header className="App-header">
-        My First React App
-        <h3> Hello, {props.name}</h3>
-      </header>
+        <MessageList />
+        <SendMessage/>
     </div>
   );
 }
-
 export default App;
